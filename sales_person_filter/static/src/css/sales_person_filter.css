@@ -1,0 +1,12 @@
+.selection{
+    width:200px;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    color: black;
+    background: radial-gradient( #f5fffe,#f3edf5);
+    border-radius:10px;
+    text-align: center;
+}
+
+}

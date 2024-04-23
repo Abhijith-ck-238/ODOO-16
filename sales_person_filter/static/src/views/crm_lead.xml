@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="sales_person_filter.ListRenderer" owl="1">
+        <div>
+            <label for="salesPerson" style="margin-left:20px">SalesPerson :</label>
+            <select t-ref="salesPerson" class="form-select selection" t-on-change="OnPersonChange">
+                <option value="0" class="salesPersonOption">All</option>
+                <option class="salesPersonOption" t-foreach="users" t-as="user" t-att-value="user.id" t-key="user.id">
+                    <t t-esc="user.name"/>
+                </option>
+            </select>
+        </div>
+         <div class="overflow-auto">
+                <t t-call="web.ListRenderer"/>
+            </div>
+    </t>
+</templates>
